@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Albert Sans", sans-serif;
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* - - - STRUCTURE - - - */
+.container {
+  padding: 3em 5em;
+  margin: 0 auto;
+  max-width: 80em;
+}
+
+/* - - - HEADER - - - */
+
+header {
+  padding: 1em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.8em;
+  border-bottom: 2px solid rgb(215, 215, 215);
+}
+
+header li {
+  display: inline;
+  margin-left: 3em;
+}
+
+.landing {
+  padding: 8em;
+  height: 90vh;
+}
+
+/* - - - IMG COLLAGES - - - */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.collage {
+  height: 100vh;
+}
+.background {
+  background: #bfcfac;
+  grid-area: 1 / 5 / 9 / 11;
+}
+
+.img-small {
+  grid-area: 3 / 7 / 7 / 10;
+}
+
+.img-big {
+  grid-area: 2 / 1 / 8 / 6;
+}
+/* - - - FEATURES - - - */
+.active {
+  color: #bfcfac;
+}
+
+.bold {
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1.5;
+}
