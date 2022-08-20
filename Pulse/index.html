@@ -5,10 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- GOOGLE FONTS  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500&family=Inter:wght@300;400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400;1,500&family=Source+Serif+Pro:wght@400;600&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500&family=Inter:wght@300;400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400;1,500&family=Source+Serif+Pro:wght@400;600&family=Space+Mono&family=Work+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -38,7 +47,7 @@
           any plan and try Pulse absolutely free for 30 days.
         </p>
       </div>
-      <div class="options">
+      <div class="options container">
         <div>
           <h3>
             These are what we call the Pulse Basics. They’re what every customer
@@ -66,42 +75,51 @@
         </div>
         <div class="recommended">
           <p class="label">Recommended</p>
-          <h2>Small Business Plan <span>$59 per month</span></h2>
-          <a href="" class="button">Sign Up Now</a>
-          <p>You get pulse basics, plus:</p>
-          <ul>
-            <li>Manage cash flow across multiple financial accounts</li>
-            <li>
-              Invite your investors, book keeper, or mamagement team to see
-              reports or manage cash flow
-            </li>
-            <li>
-              Integrate with QuickBooks Online for more accurate cash flow
-            </li>
-            <li>
-              Track your actual cash flow alongside your projected cash flow
-            </li>
-          </ul>
+          <div class="content">
+            <h2>
+              Small Business Plan <span class="price">$59 per month</span>
+            </h2>
+            <a href="" class="button">Sign Up Now</a>
+            <p>You get pulse basics, plus:</p>
+            <ul>
+              <li>Manage cash flow across multiple financial accounts</li>
+              <li>
+                Invite your investors, book keeper, or mamagement team to see
+                reports or manage cash flow
+              </li>
+              <li>
+                Integrate with QuickBooks Online for more accurate cash flow
+              </li>
+              <li>
+                Track your actual cash flow alongside your projected cash flow
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="extra">
           <p class="label">
             Complex business with multiple financial accounts, currencies, or
             auditing needs?
           </p>
-          <h2>Unlock Extra Features <span>$89 per month</span></h2>
-          <p>Get it all, plus:</p>
-          <ul>
-            <li>Manage cash flow across unlimited financial accounts</li>
-            <li>
-              Convert to any currency for localized cash flow reporting and
-              projections
-            </li>
-            <li>
-              Attach invoices or contracts to your cash flow entries for
-              accountability and auditing
-            </li>
-          </ul>
-          <a href="" class="button">Try Premium</a>
+          <div class="content">
+            <h2>
+              Unlock Extra Features <span class="price">$89 per month</span>
+            </h2>
+            <a href="" class="button">Try Premium</a>
+
+            <p>Get it all, plus:</p>
+            <ul>
+              <li>Manage cash flow across unlimited financial accounts</li>
+              <li>
+                Convert to any currency for localized cash flow reporting and
+                projections
+              </li>
+              <li>
+                Attach invoices or contracts to your cash flow entries for
+                accountability and auditing
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -117,7 +135,7 @@
       <div class="faq container">
         <h1>FAQ</h1>
         <div class="row">
-          <div class="qa">
+          <div class="question">
             <p class="bold">How does the 30-day free trial work?</p>
             <p>
               You can use Pulse absolutely free for 30 days. After 30 days, we
@@ -126,7 +144,7 @@
               will not be charged.
             </p>
           </div>
-          <div class="qa">
+          <div class="question">
             <p class="bold">
               If I upgrade an existing account, do I get another free trial?
             </p>
@@ -138,7 +156,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="qa">
+          <div class="question">
             <p class="bold">What is a “Financial Account”?</p>
             <p>
               Financial Accounts are a grouping of income and expense items that
@@ -150,7 +168,7 @@
               and business entries.
             </p>
           </div>
-          <div class="qa">
+          <div class="question">
             <p class="bold">Do I have to commit to a long-term contract?</p>
             <p>
               No. There is no contract when you use Pulse, other than agreeing
@@ -159,7 +177,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="qa">
+          <div class="question">
             <p class="bold">
               Will I be able to cancel my account if I don’t use Pulse?
             </p>
@@ -171,7 +189,7 @@
               account is not considered cancellation.
             </p>
           </div>
-          <div class="qa">
+          <div class="question">
             <p class="bold">What types of payments do you accept?</p>
             <p>
               We accept payments made online using Visa, Mastercard, Discover,
@@ -182,6 +200,32 @@
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="trial">
+        <div class="logo">
+          <img src="media/logo_white.svg" alt="" />
+        </div>
+        <a href="" class="trial-btn">Sign Up for a Free 30-Day Trial</a>
+      </div>
+      <div class="links">
+        <ul>
+          <li>Product</li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+        <ul>
+          <li>Company</li>
+          <li><a href="#">Customer Stories</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+          <li>Resources</li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
