@@ -1,7 +1,7 @@
 # Frontend-Practice
 
 
-■ ABOUT THIS PROJECT
+■ ABOUT THIS PROJECT \n
 This is a personal project to practice frontend concepts and gain confidence. 
 Basically I choose some web pages I like and try to recreate them but changing 
 the concept, design and other elements. 
