@@ -5,16 +5,16 @@
 This is a personal project to practice frontend concepts and gain confidence. 
 Basically I choose some web pages I like and try to recreate them but changing 
 the concept, design and other elements. 
-<br />
+
 
 ■ INSPIRATION AND RESOURCES<br />
 I am using "Frontend Practice" and "Frontend Mentor" pages. 
 They offer a good selection of web pages for developers to recreate. 
-<br />
+
 
 ■ PROJECT GOALS<br />
 Keep learning and develope some skills!
-<br />
+
 
 ■ CONTENTS
 01. Ableton about page (Frontend Practice - Easy)
