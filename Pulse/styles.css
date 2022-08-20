@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Albert Sans", sans-serif;
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 1.8em;
+}
+
+/* - - - STRUCTURE - - - */
+.container {
+  padding: 7em;
+  margin: 0 auto;
+}
+
+/* - - - FEATURES - - - */
+.active {
+  color: green;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+/* - - - HEADER - - - */
+
+header {
+  padding: 5em 15em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 8em;
+}
+
+.signup {
+  border: 2px solid #000;
+}
+
+nav li {
+  font-weight: bold;
+  display: inline;
+  list-style: none;
+  padding: 0.5em 2em;
+  font-size: 1.5em;
+}
+
+/* - - - MAIN - - - */
+
+h1 {
+  font-size: 6em;
+  font-weight: 500;
+}
+
+/* - - - MAIN - options - - - */
+
+.options {
+  display: flex;
+}
+
+/* - - - MAIN - FQA - - - */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.qa {
+  width: 45%;
+}
+
+/* - - - MEDIA QUERIES - - - */
