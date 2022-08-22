@@ -9,26 +9,30 @@ body {
   font-size: 62.5%;
 }
 
-img {
-  width: 100%;
-  height: auto;
+:root {
+  --primary-color: #1ce374;
+  --darker-color: #00ac6a;
 }
 
 p {
-  font-size: 1.6em;
+  font-size: 1.8em;
   line-height: 1.5;
 }
 
 h1 {
-  font-size: 4.8em;
+  font-size: 6em;
   font-style: normal;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 4.4em;
   font-weight: 200;
+}
+
+h3 {
+  font-size: 2.5em;
 }
 
 a {
@@ -43,13 +47,25 @@ a {
 
 /* - - - FEATURES - - - */
 .active {
-  color: green;
+  color: #000;
 }
 
 .center {
   text-align: center;
-  max-width: 50em;
   margin: 0 auto;
+  max-width: 55em;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 /* - - - HEADER - - - */
@@ -65,30 +81,71 @@ header {
   width: 8em;
 }
 
-.signup {
-  border: 2px solid #000;
-}
-
 nav li {
+  color: var(--darker-color);
   font-weight: bold;
-  display: inline;
+  display: inline-block;
   list-style: none;
   padding: 0.5em 2em;
   font-size: 1.5em;
 }
+.signup {
+  border: 2px solid var(--darker-color);
+  position: relative;
+}
 
+/* .signup::before {
+  content: "";
+  background: var(--darker-color);
+  width: 100px;
+  height: 50px;
+  position: fixed;
+} */
+.signup:hover {
+  cursor: pointer;
+  transform: translateX(5px);
+  /* The transform property doesn't work if li display is inline.
+  It only works with elements with inline-block or blog display!!!! */
+}
 /* - - - MAIN - options - - - */
 
-.options > * {
+.options {
+  margin: 0 auto;
+  padding: 5em 2em;
   margin-bottom: 2em;
+  max-width: 120em;
 }
 
 .content {
-  padding: 2em;
+  padding: 5em 3em;
   text-align: center;
 }
 
+.explanation {
+  padding: 3em;
+}
+.options h3 {
+  color: var(--darker-color);
+}
+
+.dotted {
+  padding: 1em;
+  list-style: circle;
+  font-weight: lighter;
+  font-size: 1.6em;
+}
+
+.fa-solid {
+  color: var(--primary-color);
+  font-size: 0.8em;
+  padding: 0.3em;
+}
+
 /* commom styles */
+
+.plan p {
+  text-transform: uppercase;
+}
 .label {
   padding: 0.5em;
   font-size: 1em;
@@ -102,49 +159,63 @@ nav li {
   display: block;
   font-size: 0.5em;
   font-weight: 100;
-  color: rgb(192, 192, 192);
+  color: rgb(53, 53, 53);
 }
 
 .button {
   font-size: 1.8em;
-  color: grey;
+  color: rgb(53, 53, 53);
   display: inline-block;
-  background: #1ce374;
-  padding: 1em 1.5em;
-  margin: 2em;
-  border: 4px solid #fff;
+  background: var(--primary-color);
+  padding: 0.8em 1.2em;
+  margin: 1em;
 }
 
-.button:hover {
+.plan:hover .button {
   color: #000;
-  border: 4px solid #1ce374;
+  transform: scale(1.1);
+}
+
+.plan:hover {
+  cursor: pointer;
+}
+
+.content li {
+  list-style: none;
+  text-align: left;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  font-weight: lighter;
+  display: block;
+}
+.content li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  font-size: 0.8em;
+  padding: 0.2em;
 }
 
 /* recommended unique styles */
 .recommended {
-  border: 0.1em solid rgb(129, 199, 129);
+  border: 0.1em solid var(--darker-color);
   border-radius: 1em 1em 0 0;
 }
 
 .recommended h2 {
-  color: rgb(129, 199, 129);
+  color: var(--darker-color);
   font-weight: bold;
 }
 
 .recommended .label {
   border-radius: 1em 1em 0 0;
   font-weight: bold;
-  background: #1ce374;
+  background: var(--darker-color);
 }
 /* - - - MAIN - FQA - - - */
 
 .faq p {
   font-size: 2em;
   font-weight: 100;
-}
-
-.bold {
-  font-weight: bold !important;
 }
 
 .question {
@@ -164,7 +235,7 @@ footer {
   text-align: center;
 }
 .trial-btn {
-  background: #1ce374;
+  background: var(--primary-color);
   display: inline-block;
   padding: 1em 2em;
   font-size: 1.6em;
@@ -190,7 +261,7 @@ footer {
 }
 
 .links li a {
-  color: #1ce374;
+  color: var(--primary-color);
 }
 
 .links a:hover {
