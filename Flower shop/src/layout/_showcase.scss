@@ -1,0 +1,15 @@
+.showcase {
+  margin: $space auto;
+
+  .card-container {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .card {
+    width: 80%;
+  }
+}

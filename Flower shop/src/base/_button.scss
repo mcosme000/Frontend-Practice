@@ -1,0 +1,8 @@
+.button {
+  @include button($grey, inline-block);
+  padding: 1.5rem 2rem;
+}
+
+.button:hover {
+  @include button($black, inline-block);
+}

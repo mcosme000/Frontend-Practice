@@ -1,0 +1,27 @@
+//MEDIA QUERIES
+@mixin phone {
+  @media (min-width: $phone) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+/* - - - BUTTON - - - */
+@mixin button($background, $display) {
+  background: $background;
+  display: $display;
+  padding: 1.5rem 2rem;
+  margin: 1rem 0rem;
+  color: $white;
+}
